@@ -1,4 +1,8 @@
-export default function ItemPage({ params }: { params: { item: string } }) {
+
+interface Params {
+  item : string;
+}
+export default function ItemPage({ params }: { params: Params}) {
     return (
       <div>
         <h1 className='text-3xl font-semibold capitalize'>{params.item} Page</h1>
