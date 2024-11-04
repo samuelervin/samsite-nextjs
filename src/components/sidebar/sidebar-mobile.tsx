@@ -7,15 +7,15 @@ import {
   SheetContent,
   SheetHeader,
   SheetTrigger,
-} from './ui/sheet';
-import { Button } from './ui/button';
-import {  ForkKnifeCrossed, LogOut, Menu, MoreHorizontal, Settings, Skull } from 'lucide-react';
+} from '../ui/sheet';
+import { Button } from '../ui/button';
+import {  ForkKnifeCrossed, LogOut, Menu, MoreHorizontal, Settings } from 'lucide-react';
 import Link from 'next/link';
 import { SidebarButtonSheet as SidebarButton } from './sidebar-button';
 import { usePathname } from 'next/navigation';
-import { Separator } from './ui/separator';
-import { Drawer, DrawerContent, DrawerTrigger } from './ui/drawer';
-import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
+import { Separator } from '../ui/separator';
+import { Drawer, DrawerContent, DrawerTrigger } from '../ui/drawer';
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import { SidebarItems } from '@/lib/types';
 
 interface SidebarMobileProps {

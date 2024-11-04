@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
-import { Sidebar } from '@/components/sidebar';
+import { Sidebar } from '@/components/sidebar/sidebar';
+import { inter } from '@/components/ui/fonts';
+
 //import { Suspense } from 'react';
 
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Sam on Programming',
@@ -18,8 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' className='dark'>
-      <body className={inter.className}>
-        <Sidebar />
+      <body className={`${inter.className} antialiased`}>
+          <Sidebar />
         <main className='mx-5 mt-16 sm:ml-[300px] sm:mt-3'>{children}</main>
       </body>
     </html>
