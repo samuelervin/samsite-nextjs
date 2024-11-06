@@ -17,26 +17,26 @@ export default function PostCard(props: PostCardProps) {
     const { post } = props
     return (
         <Link className="unstyled" href={`/recipes/${post.slug}`}>
-            <div className="items-center float-start">
-                <Card>
+           
+                <Card className="w-full max-w-full min-w-[200px] p-1 m-2">
                     <CardHeader>
                         <CardTitle>{post.title}</CardTitle>
-                        
                         <CardDescription> {post.bio}</CardDescription>
                     </CardHeader>
                     <CardContent>
-                        <div className="flex flex-row  ml-2 pl-2 text-xs float-start">
+                    <div className="flex flex-row  ml-2 pl-2 text-xs">
                         <div className="basis-1/4 font-bold text-m">Prep Time:</div>
                         <div className="basis-3/4">{post.prep_time}</div>
-                        </div>
-                        <div className="flex flex-row  ml-2 pl-2 text-xs float-start">
+                    </div>
+                    
+                    <div className="flex flex-row  ml-2 pl-2 text-xs">
                         <div className="basis-1/4 font-bold text-m">Cook Time:</div>
                         <div className="basis-3/4">{post.cook_time}</div>
                     </div>
                     </CardContent>
 
                 </Card>
-            </div>
+           
         </Link>
     )
 }
