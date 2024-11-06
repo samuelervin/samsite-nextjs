@@ -1,28 +1,16 @@
-'use client'
 import React from "react";
+
 
 interface Params {
   item: string;
 }
 
-interface PageProps {
-  params: Promise<Params>;
-}
 
-export default function ItemPage({ params }: PageProps) {
-  const [resolvedParams, setResolvedParams] = React.useState<Params | null>(null);
+export default function ItemPage({ params }:{params : Params}) {
 
-  React.useEffect(() => {
-    params.then(setResolvedParams);
-  }, [params]);
-
-  if (!resolvedParams) {
-    return <div>Loading...</div>;
-  }
-
-  return (
+    return (
     <div>
-      <h1 className='text-3xl font-semibold capitalize'>{resolvedParams.item} Page</h1>
+      <h1 className='text-3xl font-semibold capitalize'>{params.item} Page</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sapiente
         tenetur animi excepturi tempora aperiam, fugit in architecto, iusto

@@ -30,6 +30,7 @@ export function SidebarDesktop(props: SidebarDesktopProps) {
                   variant={pathname === link.href ? 'secondary' : 'ghost'}
                   icon={link.icon}
                   className='w-full'
+                  id={link.id}
                 >
                   {link.label}
                 </SidebarButton>

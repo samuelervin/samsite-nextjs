@@ -3,6 +3,7 @@
 import {
   Bell,
   Bookmark,
+  CookingPot,
   createLucideIcon,
   Home,
   Linkedin,
@@ -33,25 +34,35 @@ const XIcon = createLucideIcon("X", [
 
 const sidebarItems: SidebarItems = {
   links: [
-    { label: 'Home', href: '/', icon: Home },
-    { label: 'Notifications', href: '/item/notifications', icon: Bell },
-    { label: 'Messages', href: '/item/messages', icon: Mail },
+    { id: "home1", label: 'Home', href: '/', icon: Home },
+    { id: "notify1", label: 'Notifications', href: '/item/notifications', icon: Bell },
+    { id: "messages1", label: 'Messages', href: '/item/messages', icon: Mail },
     {
+      id: "lists1",
       href: '/item/lists',
       icon: List,
       label: 'Lists',
     },
     {
+      id: "recipes1",
+      href: '/recipes',
+      icon: CookingPot,
+      label: 'Recipes',
+    },
+    {
+      id: "bookmarks1",
       href: '/item/bookmarks',
       icon: Bookmark,
       label: 'Bookmarks',
     },
     {
+      id: "communities1",
       href: '/item/communities',
       icon: Users,
       label: 'Communities',
     },
     {
+      id: "profile1",
       href: '/item/profile',
       icon: User,
       label: 'Profile',

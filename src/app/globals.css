@@ -56,4 +56,34 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  h1 {
+    @apply font-semibold text-3xl p-2 m-4;
+  }
+  h2{
+    @apply font-semibold text-2xl p-2 m-4;
+  }
+  h3{
+    @apply font-semibold text-xl p-2 m-4;
+  }
+  h4{
+     @apply font-semibold text-lg p-2 m-4;
+  }
+
+  p{
+    @apply text-sm items-start;
+  }
+
+  ol{
+    @apply list-decimal p-2 m-4;
+  }
+   ul{
+    @apply list-disc p-2 m-4;
+   }
+
+  li{
+     @apply font-semibold text-sm list-item;
+
+  }
+
 }
