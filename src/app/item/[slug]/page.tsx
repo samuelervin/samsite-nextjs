@@ -1,16 +1,12 @@
-import React from "react";
+export default async function Page(props: { params: Promise<{ slug: string }> }) {
+  // asynchronous access of `params.slug`.
+  const params = await props.params;
+  const slug = params.slug
 
 
-interface Params {
-  item: string;
-}
-
-
-export default function ItemPage({ params }:{params : Params}) {
-
-    return (
+  return (
     <div>
-      <h1 className='text-3xl font-semibold capitalize'>{params.item} Page</h1>
+      <h1 className='text-3xl font-semibold capitalize'>{slug} Page</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sapiente
         tenetur animi excepturi tempora aperiam, fugit in architecto, iusto

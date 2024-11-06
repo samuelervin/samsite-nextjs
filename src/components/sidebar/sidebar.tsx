@@ -39,7 +39,7 @@ const sidebarItems: SidebarItems = {
     { id: "messages1", label: 'Messages', href: '/item/messages', icon: Mail },
     {
       id: "lists1",
-      href: '/item/lists',
+      href: '/lists/list',
       icon: List,
       label: 'Lists',
     },

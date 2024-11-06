@@ -1,5 +1,4 @@
 
-import SearchView from "@/components/searchView";
 import { roboto } from "@/components/ui/fonts";
 
 export default function Home() {
